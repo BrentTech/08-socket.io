@@ -9,16 +9,21 @@
 [![Build Status](https://www.travis-ci.com/BrentTech/08-socket.io.svg?branch=master)](https://www.travis-ci.com/BrentTech/08-socket.io)
 * [repo](https://github.com/BrentTech/08-socket.io)
 * [travis](https://www.travis-ci.com/BrentTech/08-socket.io)
-* [back-end](http://xyz.com)
 
 ### Modules
-#### `modulename.js`
+#### `app.js`
 ##### Exported Values and Methods
 
-###### `foo(thing) -> string`
+###### `loadfile(file) -> readFile()`
 Usage Notes or examples
 
-###### `bar(array) -> array`
+###### `saveFile(array, buffer) -> writeFile()`
+Usage Notes or examples
+
+###### `convertBuffer(buffer) -> uppercase string`
+Usage Notes or examples
+
+###### `alterFile(file) -> `
 Usage Notes or examples
 
 ### Setup
@@ -26,11 +31,13 @@ Usage Notes or examples
 * `PORT` - 3000 (Localhost)
 
 #### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
+* `nodemon server.js`
   * Returns a JSON object with xyz in it.
+* `node app.js`
+  * Reads in file, modifies it, and writes it out. Emits notifications of activity.
+* `node logger.js`
+  * Starts client that displays console logs of server activity.
+
 
 #### Tests
 * How do you run tests?
